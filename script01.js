@@ -117,6 +117,17 @@ const terakoyaMessages = {
 };
 
 function startQuiz() {
+  const name = document.getElementById("userName").value.trim();
+  const email = document.getElementById("userEmail").value.trim();
+
+  if (!name) {
+    alert("Please enter your name.");
+    return;
+  }
+
+  window.userName = name;
+  window.userEmail = email;
+
   currentQuestion = 0;
 
   scores = {
