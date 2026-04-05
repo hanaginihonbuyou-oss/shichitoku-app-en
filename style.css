@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  background: #f7f4ef;
+  color: #2c2c2c;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+.hero {
+  margin-bottom: 24px;
+}
+
+.hero-image {
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.intro-card,
+.quiz-card,
+.result-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px 24px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  margin-bottom: 24px;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.3;
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #1f1f1f;
+}
+
+.subtitle {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #7a2230;
+}
+
+.intro-text {
+  font-size: 1rem;
+  margin-bottom: 24px;
+}
+
+.start-btn,
+.answer-btn,
+.link-btn,
+.retry-btn {
+  display: inline-block;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+  margin: 6px 8px 6px 0;
+  text-decoration: none;
+}
+
+.start-btn,
+.link-btn {
+  background: #7a2230;
+  color: #fff;
+}
+
+.retry-btn {
+  background: #d8c5a2;
+  color: #2c2c2c;
+}
+
+.answer-btn {
+  width: 100%;
+  text-align: left;
+  background: #f3ede3;
+  color: #2c2c2c;
+  border: 1px solid #e4d7c0;
+  border-radius: 14px;
+  margin: 8px 0;
+}
+
+.start-btn:hover,
+.answer-btn:hover,
+.link-btn:hover,
+.retry-btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.question-number {
+  font-size: 0.95rem;
+  color: #7a2230;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.question-title {
+  font-size: 1.7rem;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.result-card:empty,
+.quiz-card:empty {
+  display: none;
+}
+
+.result-title {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: #7a2230;
+}
+
+.result-main {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.result-sub {
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+}
+
+.result-message,
+.result-follow,
+.result-terakoya {
+  margin-bottom: 16px;
+}
+
+.action-row {
+  margin-top: 24px;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 16px 12px 36px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .question-title {
+    font-size: 1.35rem;
+  }
+
+  .intro-card,
+  .quiz-card,
+  .result-card {
+    padding: 22px 18px;
+  }
+}
