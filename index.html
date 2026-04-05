@@ -2,25 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shichitoku App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
 
-<h1>Which Japanese historical figure reflects your way of being?</h1>
+    <div class="hero">
+      <img src="ENtop.png" alt="Shichitoku App Top Image" class="hero-image">
+    </div>
 
-<p>Choose with intuition.</p>
+    <div class="intro-card">
+      <h1>Which Japanese historical figure reflects your way of being?</h1>
 
-<p>
-This is not a test of right or wrong answers.<br>
-Through the seven virtues of Bushido, it gently reveals the values and way of being that may already live within you.
-</p>
+      <p class="subtitle">Choose with intuition.</p>
 
-<button onclick="startQuiz()">Start Quiz</button>
+      <p class="intro-text">
+        This is not a test of right or wrong answers.<br>
+        Through the seven virtues of Bushido, it gently reveals the values and way of being that may already live within you.
+      </p>
 
-<div id="quiz"></div>
-<div id="result"></div>
+      <button class="start-btn" onclick="startQuiz()">Start Quiz</button>
+    </div>
 
-<script src="script.js"></script>
+    <div id="quiz" class="quiz-card"></div>
 
+    <div id="result" class="result-card"></div>
+
+  </div>
+
+  <script src="script01.js"></script>
 </body>
 </html>
