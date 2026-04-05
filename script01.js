@@ -185,6 +185,7 @@ function showResult() {
 
   resultDiv.innerHTML =
     "<h2 class='result-title'>Your Result</h2>" +
+    "<p><strong>Name:</strong> " + window.userName + "</p>"
     "<p class='result-main'><strong>Primary Type:</strong> " + resultsMap[mainType] + "</p>" +
     "<p class='result-sub'><strong>Secondary Type:</strong> " + resultsMap[subType] + "</p>" +
     "<p class='result-message'>" + resultMessages[mainType] + "</p>" +
