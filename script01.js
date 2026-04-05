@@ -183,17 +183,16 @@ function showResult() {
 
   quizDiv.innerHTML = "";
 
- resultDiv.innerHTML =
-  "<h2 class='result-title'>Your Result</h2>" +
-  "<p><strong>Name:</strong> " + window.userName + "</p>" +
-  "<p class='result-main'><strong>Primary Type:</strong> " + resultsMap[mainType] + "</p>" +
-  "<p class='result-sub'><strong>Secondary Type:</strong> " + resultsMap[subType] + "</p>" +
-  "<p class='result-message'>" + resultMessages[mainType] + "</p>" +
-  "<p class='result-follow'>" + followMessages[subType] + "</p>" +
-  "<p class='result-terakoya'><strong>A message from Terakoya:</strong> " + terakoyaMessages[mainType] + "</p>" +
-  "<div class='action-row'>" +
-    "<a class='link-btn' href='https://terakoya-education-fsprhpr.gamma.site/' target='_blank'>Visit the English Terakoya Page</a>" +
-    "<button class='retry-btn' onclick='startQuiz()'>Try Again</button>" +
-  "</div>";
+  resultDiv.innerHTML =
+    "<h2 class='result-title'>Your Result</h2>" +
+    "<p><strong>Name:</strong> " + window.userName + "</p>" +
+    "<p class='result-main'><strong>Primary Type:</strong> " + resultsMap[mainType] + "</p>" +
+    "<p class='result-sub'><strong>Secondary Type:</strong> " + resultsMap[subType] + "</p>" +
+    "<p class='result-message'>" + resultMessages[mainType] + "</p>" +
+    "<p class='result-follow'>" + followMessages[subType] + "</p>" +
+    "<p class='result-terakoya'><strong>A message from Terakoya:</strong> " + terakoyaMessages[mainType] + "</p>" +
+    "<div class='action-row'>" +
+      "<a class='link-btn' href='https://terakoya-education-fsprhpr.gamma.site/' target='_blank'>Visit the English Terakoya Page</a>" +
+      "<button class='retry-btn' onclick='startQuiz()'>Try Again</button>" +
+    "</div>";
 }
-
