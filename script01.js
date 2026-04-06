@@ -87,33 +87,33 @@ const resultsMap = {
 };
 
 const resultMessages = {
-  justice: "You are guided by conviction, fairness, and a strong inner compass. You value what is right, even when the path is not easy.",
-  courage: "You move forward with bravery and spirit. Even in uncertainty, you are willing to act with strength and resolve.",
-  benevolence: "You carry warmth, empathy, and a deep wish to protect others. Your strength appears through kindness and care.",
-  respect: "You value refinement, dignity, and the beauty of proper conduct. You bring harmony through awareness and grace.",
-  integrity: "You are sincere, thoughtful, and true to your beliefs. Your honesty and purpose shape the way you live.",
-  honor: "You value dignity, pride, and the strength to uphold your name and responsibilities. There is nobility in your presence.",
-  loyalty: "You are devoted, steadfast, and deeply rooted in commitment. You protect the bonds and promises that matter to you."
+  justice: "You are the Justice type, aligned with Uesugi Kenshin. You are guided by an inner sense of what is right, even when the path is not easy. Quietly, firmly, you seek a life that does not betray your principles.",
+  courage: "You are the Courage type, aligned with Tomoe Gozen. When the moment calls, you step forward. Your strength is not loud bravado, but the power to move through fear with clarity and resolve.",
+  benevolence: "You are the Benevolence type, aligned with Yae Niijima. Your strength lives in compassion. You do not simply protect yourself — you hold space for others, and bring warmth where it is needed most.",
+  respect: "You are the Respect type, aligned with Sen no Rikyu. You value presence, attentiveness, and the beauty of what is quietly shared. In a restless world, you are drawn to depth, grace, and meaningful form.",
+  integrity: "You are the Integrity type, aligned with Yoshida Shoin. You seek honesty that begins within. To live truthfully matters more to you than appearances, and your words carry weight when they rise from conviction.",
+  honor: "You are the Honor type, aligned with Takeda Shingen. You are driven to live in a way that you can stand by. Dignity, responsibility, and self-respect shape your path more than praise from others.",
+  loyalty: "You are the Loyalty type, aligned with Hojo Masako. Once you choose what matters, you do not turn away easily. Your strength lies in devotion, endurance, and the will to remain when others retreat."
 };
 
 const followMessages = {
-  justice: "Your secondary type adds another layer to your sense of purpose and direction.",
-  courage: "Your secondary type adds momentum and boldness to your character.",
-  benevolence: "Your secondary type softens your strength with warmth and humanity.",
-  respect: "Your secondary type brings elegance, mindfulness, and composure.",
-  integrity: "Your secondary type deepens your sincerity and sense of mission.",
-  honor: "Your secondary type adds pride, discipline, and noble presence.",
-  loyalty: "Your secondary type strengthens your devotion and constancy."
+  justice: "You may be someone who cannot look away when something feels deeply misaligned. Even in silence, your heart keeps asking what is right.",
+  courage: "You may be someone who meets life by stepping into it. Even when uncertain, something in you chooses forward over retreat.",
+  benevolence: "You may be someone whose care is quietly transformative. Others may feel at ease in your presence without fully knowing why.",
+  respect: "You may be someone who senses meaning in small gestures. You are likely drawn not to noise, but to refinement, rhythm, and sincerity.",
+  integrity: "You may be someone who struggles to live half-heartedly. When something is false, you feel it quickly — and cannot remain there for long.",
+  honor: "You may be someone who values the way one stands in the world. Pride, for you, is not vanity, but a discipline of bearing and choice.",
+  loyalty: "You may be someone who remains true beyond convenience. Your commitments are rarely casual — they are chosen with the heart, and carried with strength."
 };
 
 const terakoyaMessages = {
-  justice: "A path of conviction can become a bridge to deeper encounters with Japanese culture.",
-  courage: "Your bold spirit may find new inspiration through Japanese cultural values and lived traditions.",
-  benevolence: "Your kindness may open the door to meaningful encounters within the circle of culture.",
-  respect: "Your sense of grace may resonate deeply with the spirit of Japanese arts and etiquette.",
-  integrity: "Your sincerity may lead you toward a profound connection with the heart of Japanese culture.",
-  honor: "Your noble spirit may discover new meaning through cultural depth and disciplined beauty.",
-  loyalty: "Your devotion may find quiet strength in the enduring ties woven through Japanese tradition."
+  justice: "If this way of being resonates with you, Wa-gokoro Terakoya may offer a deeper doorway. Through Japanese culture, gesture, and thought, you may find language for what you have long felt.",
+  courage: "If this spirit speaks to you, Wa-gokoro Terakoya may be a place to explore it further. Japanese culture holds many forms of strength — not only in action, but in presence, discipline, and inner poise.",
+  benevolence: "If this quiet warmth feels familiar, Wa-gokoro Terakoya may offer a meaningful next step. Within Japanese culture live gestures of care, thoughtfulness, and beauty that are meant to be lived, not only understood.",
+  respect: "If this sensibility draws you in, Wa-gokoro Terakoya may feel like a natural place to continue. Japanese culture preserves many subtle arts of presence — ways of seeing, receiving, and shaping the atmosphere between people.",
+  integrity: "If this truth feels close to your heart, Wa-gokoro Terakoya may offer a path worth encountering. Japanese culture carries disciplines that ask not only what you do, but how you stand, speak, and live.",
+  honor: "If this dignity resonates with you, Wa-gokoro Terakoya may open another layer of understanding. Japanese culture holds refined ways of carrying oneself — with form, restraint, and quiet pride.",
+  loyalty: "If this devotion feels true to you, Wa-gokoro Terakoya may be a meaningful encounter. In Japanese culture, there are many ways to learn steadfastness — not as rigidity, but as a beautiful way of remaining true."
 };
 
 function startQuiz() {
