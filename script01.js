@@ -181,13 +181,15 @@ function showResult() {
   const mainType = sortedTypes[0];
   const subType = sortedTypes[1];
 
-  console.log({
+console.log("RESULT CHECK START");
+console.log({
   name: window.userName,
   email: window.userEmail || "",
   primary: mainType,
   secondary: subType,
   language: "English"
 });
+alert("RESULT CHECK");
   
   quizDiv.innerHTML = "";
 
