@@ -181,7 +181,7 @@ function showResult() {
   const mainType = sortedTypes[0];
   const subType = sortedTypes[1];
 
-    quizDiv.innerHTML = "";
+  quizDiv.innerHTML = "";
 
   resultDiv.innerHTML =
     "<h2 class='result-title'>Your Result</h2>" +
