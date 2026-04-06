@@ -180,7 +180,8 @@ function showResult() {
 
   const mainType = sortedTypes[0];
   const subType = sortedTypes[1];
-
+　window.mainType = mainType;
+　window.subType = subType;
   quizDiv.innerHTML = "";
 
   resultDiv.innerHTML =
@@ -192,7 +193,7 @@ function showResult() {
     "<p class='result-follow'>" + followMessages[subType] + "</p>" +
     "<p class='result-terakoya'><strong>A message from Terakoya:</strong> " + terakoyaMessages[mainType] + "</p>" +
     "<div class='action-row'>" +
-      "<a class='link-btn' href='https://terakoya-education-fsprhpr.gamma.site/' target='_blank'>Visit the English Terakoya Page</a>" +
+      "<a class='link-btn' href='https://terakoya-education-fsprhpr.gamma.site/' target='_blank' onclick='trackEnHpClick()'>Visit the English Terakoya Page</a>" +
       "<button class='retry-btn' onclick='startQuiz()'>Try Again</button>" +
     "</div>";
 
