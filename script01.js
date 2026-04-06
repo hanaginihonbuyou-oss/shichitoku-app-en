@@ -12,66 +12,66 @@ let scores = {
 
 const questions = [
   {
-    q: "When making an important decision, what matters most to you?",
+    q: "What quietly guides your decisions?",
     a: [
-      { text: "Doing what is right, even if it is difficult", type: "justice" },
-      { text: "Having the courage to act", type: "courage" },
-      { text: "Choosing what brings peace to others", type: "benevolence" },
-      { text: "Acting with grace and proper conduct", type: "respect" }
+      { text: "A sense of what is right, even without recognition", type: "justice" },
+      { text: "The courage to step forward without hesitation", type: "courage" },
+      { text: "A desire to bring peace to others", type: "benevolence" },
+      { text: "The awareness of how one should carry oneself", type: "respect" }
     ]
   },
   {
-    q: "How do you face challenges?",
+    q: "When facing difficulty, what rises within you first?",
     a: [
-      { text: "Face them directly and bravely", type: "courage" },
-      { text: "Think carefully before acting", type: "justice" },
-      { text: "Seek harmony and avoid unnecessary conflict", type: "benevolence" },
-      { text: "Stay true to your principles", type: "integrity" }
+      { text: "A will to stand firm, no matter the outcome", type: "courage" },
+      { text: "A calm reflection before taking action", type: "justice" },
+      { text: "A wish to avoid conflict and keep harmony", type: "benevolence" },
+      { text: "A determination to remain true to your principles", type: "integrity" }
     ]
   },
   {
-    q: "What kind of person do you trust most?",
+    q: "What kind of presence do you trust the most?",
     a: [
-      { text: "Someone who keeps their word", type: "integrity" },
-      { text: "Someone who acts with loyalty", type: "loyalty" },
-      { text: "Someone who shows respect to all", type: "respect" },
-      { text: "Someone with a strong sense of fairness", type: "justice" }
+      { text: "One who acts with quiet sincerity", type: "integrity" },
+      { text: "One who stays devoted without wavering", type: "loyalty" },
+      { text: "One who respects others in every situation", type: "respect" },
+      { text: "One who carries a strong sense of justice", type: "justice" }
     ]
   },
   {
-    q: "What kind of strength do you admire most?",
+    q: "What kind of strength do you find most admirable?",
     a: [
-      { text: "The strength to protect others", type: "benevolence" },
-      { text: "The strength to remain honorable", type: "honor" },
-      { text: "The strength to stand firm in adversity", type: "courage" },
-      { text: "The strength to remain disciplined", type: "respect" }
+      { text: "The strength to protect and support others", type: "benevolence" },
+      { text: "The strength to uphold dignity and honor", type: "honor" },
+      { text: "The strength to move forward despite fear", type: "courage" },
+      { text: "The strength to remain disciplined and composed", type: "respect" }
     ]
   },
   {
-    q: "What do you value most in relationships?",
+    q: "In relationships, what feels most essential to you?",
     a: [
-      { text: "Mutual trust and sincerity", type: "integrity" },
-      { text: "Devotion and standing by one another", type: "loyalty" },
-      { text: "Kindness and understanding", type: "benevolence" },
-      { text: "Respect and dignity", type: "respect" }
+      { text: "Trust that is built through honesty", type: "integrity" },
+      { text: "A bond that does not easily break", type: "loyalty" },
+      { text: "Gentle understanding and compassion", type: "benevolence" },
+      { text: "Mutual respect and graceful distance", type: "respect" }
     ]
   },
   {
-    q: "When others rely on you, how do you respond?",
+    q: "When someone relies on you, how do you respond?",
     a: [
-      { text: "I take responsibility and do what is right", type: "justice" },
-      { text: "I support them with compassion", type: "benevolence" },
-      { text: "I protect the trust placed in me", type: "loyalty" },
-      { text: "I try to respond with dignity and care", type: "honor" }
+      { text: "By doing what must be done, without compromise", type: "justice" },
+      { text: "By offering warmth and support", type: "benevolence" },
+      { text: "By protecting the trust placed in you", type: "loyalty" },
+      { text: "By responding with dignity and care", type: "honor" }
     ]
   },
   {
     q: "What kind of life feels most true to you?",
     a: [
-      { text: "A life guided by justice and conviction", type: "justice" },
-      { text: "A life of bold action and courage", type: "courage" },
-      { text: "A life of sincerity and moral purpose", type: "integrity" },
-      { text: "A life of loyalty, devotion, and inner strength", type: "loyalty" }
+      { text: "A life guided by an inner sense of justice", type: "justice" },
+      { text: "A life that embraces boldness and courage", type: "courage" },
+      { text: "A life rooted in sincerity and purpose", type: "integrity" },
+      { text: "A life devoted to loyalty and inner strength", type: "loyalty" }
     ]
   }
 ];
