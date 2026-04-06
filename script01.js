@@ -203,7 +203,7 @@ function showResult() {
       "<a class='link-btn' href='https://terakoya-education-fsprhpr.gamma.site/' target='_blank'>Visit the English Terakoya Page</a>" +
       "<button class='retry-btn' onclick='startQuiz()'>Try Again</button>" +
     "</div>";
-}
+
   fetch("https://script.google.com/macros/s/AKfycbxhHOUcwCxQ6_eGGbO4q6YGb1KqybVMSIdwj4vBiByY2LeSBXB1KR2bMm9K10ifBLWL5g/exec", {
   method: "POST",
   mode: "no-cors",
@@ -218,3 +218,4 @@ function showResult() {
     language: "English"
   })
 });
+}
