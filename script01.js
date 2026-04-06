@@ -181,15 +181,7 @@ function showResult() {
   const mainType = sortedTypes[0];
   const subType = sortedTypes[1];
 
-  name: window.userName,
-  email: window.userEmail || "",
-  primary: mainType,
-  secondary: subType,
-  language: "English"
-});
-
-
-  quizDiv.innerHTML = "";
+    quizDiv.innerHTML = "";
 
   resultDiv.innerHTML =
     "<h2 class='result-title'>Your Result</h2>" +
