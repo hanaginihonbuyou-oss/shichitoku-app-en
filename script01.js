@@ -188,20 +188,7 @@ function showResult() {
   language: "English"
 });
 
-  fetch("https://script.google.com/macros/s/AKfycbxhHOUcwCxQ6_eGGbO4q6YGb1KqybVMSIdwj4vBiByY2LeSBXB1KR2bMm9K10ifBLWL5g/exec", {
-  method: "POST",
-  mode: "no-cors",
-  headers: {
-    "Content-Type": "application/json"
-  },
-  body: JSON.stringify({
-    name: window.userName,
-    email: window.userEmail || "",
-    primary: mainType,
-    secondary: subType,
-    language: "English"
-  })
-});
+
   quizDiv.innerHTML = "";
 
   resultDiv.innerHTML =
@@ -217,3 +204,17 @@ function showResult() {
       "<button class='retry-btn' onclick='startQuiz()'>Try Again</button>" +
     "</div>";
 }
+  fetch("https://script.google.com/macros/s/AKfycbxhHOUcwCxQ6_eGGbO4q6YGb1KqybVMSIdwj4vBiByY2LeSBXB1KR2bMm9K10ifBLWL5g/exec", {
+  method: "POST",
+  mode: "no-cors",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    name: window.userName,
+    email: window.userEmail || "",
+    primary: mainType,
+    secondary: subType,
+    language: "English"
+  })
+});
