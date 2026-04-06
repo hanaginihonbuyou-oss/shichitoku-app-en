@@ -181,15 +181,12 @@ function showResult() {
   const mainType = sortedTypes[0];
   const subType = sortedTypes[1];
 
-console.log("RESULT CHECK START");
-console.log({
   name: window.userName,
   email: window.userEmail || "",
   primary: mainType,
   secondary: subType,
   language: "English"
 });
-alert("RESULT CHECK");
 
   fetch("https://script.google.com/macros/s/AKfycbxhHOUcwCxQ6_eGGbO4q6YGb1KqybVMSIdwj4vBiByY2LeSBXB1KR2bMm9K10ifBLWL5g/exec", {
   method: "POST",
