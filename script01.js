@@ -197,16 +197,17 @@ function showResult() {
       "<button class='retry-btn' onclick='startQuiz()'>Try Again</button>" +
     "</div>";
 
-  fetch("https://script.google.com/macros/s/AKfycbwRWZWojbkbQ1PHSnMWHN3HkFTtVx1r7AycaB_3g0FhlEqnHyAsQYDnrIAdMr1YVEIt_Q/exec", {
+ fetch("https://script.google.com/macros/s/AKfycbwRWZWojbkbQ1PHSnMWHN3HkFTtVx1r7AycaB_3g0FhlEqnHyAsQYDnrIAdMr1YVEIt_Q/exec", {
   method: "POST",
   mode: "no-cors",
   headers: {
     "Content-Type": "application/json"
   },
- body: JSON.stringify({
-  name: window.userName,
-  email: window.userEmail || "",
-  primary: mainType,
-  secondary: subType,
-  language: "English"
+  body: JSON.stringify({
+    name: window.userName || "",
+    email: window.userEmail || "",
+    primary: mainType,
+    secondary: subType,
+    language: "English"
+  })
 });
