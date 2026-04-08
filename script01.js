@@ -243,6 +243,7 @@ function saveEnglishResult(mainType, subType) {
   }, 1000);
 }
 function trackEnHpClick() {
+  alert("HP click function called");
   const form = document.createElement("form");
   form.method = "POST";
   form.action = "https://script.google.com/macros/s/AKfycbyRB7m3G_R5Ez_4ks1lRqOHRWLFCXirDx6lLmdmiazpYyzmGc4N1-C99D0PZ9-_8tCOMg/exec";
