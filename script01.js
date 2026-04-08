@@ -201,6 +201,9 @@ saveEnglishResult(mainType, subType);
 }
 
 function saveEnglishResult(mainType, subType) {
+  alert("saveEnglishResult called");
+  console.log("saveEnglishResult called", mainType, subType);
+
   const params = new URLSearchParams({
     name: window.userName || "",
     email: window.userEmail || "",
