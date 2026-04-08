@@ -203,11 +203,10 @@ function showResult() {
   headers: {
     "Content-Type": "application/json"
   },
-  body: JSON.stringify({
-    name: window.userName,
-    email: window.userEmail || "",
-    primary: mainType,
-    secondary: subType,
-    language: "English"
-  })
+ body: JSON.stringify({
+  name: window.userName,
+  email: window.userEmail || "",
+  primary: mainType,
+  secondary: subType,
+  language: "English"
 });
