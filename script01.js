@@ -200,23 +200,42 @@ function showResult() {
 saveEnglishResult(mainType, subType);
 }
 
-function alert("SHOWRESULT OK");
-saveEnglishResult(mainType, subType);
-}
-  alert("saveEnglishResult called");
-  console.log("saveEnglishResult called", mainType, subType);
+function saveEnglishResult(mainType, subType) {
+  const form = document.createElement("form");
+  form.method = "POST";
+  form.action = "https://script.google.com/macros/s/AKfycbyqfuIwI4-a6NMXwVh2Dn1cxfoTR4EuSrShadXSnMT1qIxiMMZdlPXpm6YX6OCG3AuOvQ/exec";
+  form.target = "hidden_iframe";
+  form.style.display = "none";
 
-  const params = new URLSearchParams({
+  const fields = {
     name: window.userName || "",
     email: window.userEmail || "",
     primary: mainType,
     secondary: subType,
     language: "English"
+  };
+
+  Object.keys(fields).forEach(function(key) {
+    const input = document.createElement("input");
+    input.type = "hidden";
+    input.name = key;
+    input.value = fields[key];
+    form.appendChild(input);
   });
 
-  fetch("https://script.google.com/macros/s/AKfycbyqfuIwI4-a6NMXwVh2Dn1cxfoTR4EuSrShadXSnMT1qIxiMMZdlPXpm6YX6OCG3AuOvQ/exec", {
-    method: "POST",
-    mode: "no-cors",
-    body: params
-  });
+  let iframe = document.getElementById("hidden_iframe");
+  if (!iframe) {
+    iframe = document.createElement("iframe");
+    iframe.name = "hidden_iframe";
+    iframe.id = "hidden_iframe";
+    iframe.style.display = "none";
+    document.body.appendChild(iframe);
+  }
+
+  document.body.appendChild(form);
+  form.submit();
+
+  setTimeout(function() {
+    form.remove();
+  }, 1000);
 }
