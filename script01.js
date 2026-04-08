@@ -242,8 +242,7 @@ function saveEnglishResult(mainType, subType) {
     form.remove();
   }, 1000);
 }
-function trackEnHpClick() {
-  alert("HP click function called");
+function trackEnHpClickAndOpen(url) {
   const form = document.createElement("form");
   form.method = "POST";
   form.action = "https://script.google.com/macros/s/AKfycbyRB7m3G_R5Ez_4ks1lRqOHRWLFCXirDx6lLmdmiazpYyzmGc4N1-C99D0PZ9-_8tCOMg/exec";
@@ -258,6 +257,34 @@ function trackEnHpClick() {
     secondary: window.subType || "",
     language: "English"
   };
+
+  Object.keys(fields).forEach(function(key) {
+    const input = document.createElement("input");
+    input.type = "hidden";
+    input.name = key;
+    input.value = fields[key];
+    form.appendChild(input);
+  });
+
+  let iframe = document.getElementById("hidden_iframe");
+  if (!iframe) {
+    iframe = document.createElement("iframe");
+    iframe.name = "hidden_iframe";
+    iframe.id = "hidden_iframe";
+    iframe.style.display = "none";
+    document.body.appendChild(iframe);
+  }
+
+  document.body.appendChild(form);
+  form.submit();
+
+  setTimeout(function() {
+    form.remove();
+    window.open(url, "_blank");
+  }, 300);
+
+  return false;
+}
 
   Object.keys(fields).forEach(function(key) {
     const input = document.createElement("input");
