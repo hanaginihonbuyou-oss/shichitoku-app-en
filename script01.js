@@ -203,7 +203,7 @@ saveEnglishResult(mainType, subType);
 function saveEnglishResult(mainType, subType) {
   const form = document.createElement("form");
   form.method = "POST";
-  form.action = "https://script.google.com/macros/s/AKfycbyqfuIwI4-a6NMXwVh2Dn1cxfoTR4EuSrShadXSnMT1qIxiMMZdlPXpm6YX6OCG3AuOvQ/exec";
+  form.action = "https://script.google.com/macros/s/AKfycbx0Uxp8WIeEmYx3t-sImErYxwimQ8D6wDcvIgErmcuIoFJPnK3UUbN4562x_AtCHb1Gwg/exec";
   form.target = "hidden_iframe";
   form.style.display = "none";
 
