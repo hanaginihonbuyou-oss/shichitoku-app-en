@@ -201,18 +201,17 @@ saveEnglishResult(mainType, subType);
 }
 
 function saveEnglishResult(mainType, subType) {
+  const params = new URLSearchParams({
+    name: window.userName || "",
+    email: window.userEmail || "",
+    primary: mainType,
+    secondary: subType,
+    language: "English"
+  });
+
   fetch("https://script.google.com/macros/s/AKfycbyqfuIwI4-a6NMXwVh2Dn1cxfoTR4EuSrShadXSnMT1qIxiMMZdlPXpm6YX6OCG3AuOvQ/exec", {
     method: "POST",
     mode: "no-cors",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      name: window.userName || "",
-      email: window.userEmail || "",
-      primary: mainType,
-      secondary: subType,
-      language: "English"
-    })
+    body: params
   });
 }
