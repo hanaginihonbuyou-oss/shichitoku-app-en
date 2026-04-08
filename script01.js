@@ -207,13 +207,16 @@ function saveEnglishResult(mainType, subType) {
   form.target = "hidden_iframe";
   form.style.display = "none";
 
-  const fields = {
-    name: window.userName || "",
-    email: window.userEmail || "",
-    primary: mainType,
-    secondary: subType,
-    language: "English"
-  };
+ const fields = {
+  mode: "result",
+  session_id: window.enSessionId || "",
+  name: window.userName || "",
+  email: window.userEmail || "",
+  primary: mainType,
+  secondary: subType,
+  language: "English",
+  hp_click: "No"
+};
 
   Object.keys(fields).forEach(function(key) {
     const input = document.createElement("input");
