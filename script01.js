@@ -197,7 +197,7 @@ function showResult() {
       "<button class='retry-btn' onclick='startQuiz()'>Try Again</button>" +
     "</div>";
 
-  fetch("https://script.google.com/macros/s/AKfycbxhHOUcwCxQ6_eGGbO4q6YGb1KqybVMSIdwj4vBiByY2LeSBXB1KR2bMm9K10ifBLWL5g/exec", {
+  fetch("https://script.google.com/macros/s/AKfycbwRWZWojbkbQ1PHSnMWHN3HkFTtVx1r7AycaB_3g0FhlEqnHyAsQYDnrIAdMr1YVEIt_Q/exec", {
   method: "POST",
   mode: "no-cors",
   headers: {
@@ -211,4 +211,3 @@ function showResult() {
     language: "English"
   })
 });
-}
