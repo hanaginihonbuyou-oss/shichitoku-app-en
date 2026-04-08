@@ -285,28 +285,3 @@ function trackEnHpClickAndOpen(url) {
 
   return false;
 }
-
-  Object.keys(fields).forEach(function(key) {
-    const input = document.createElement("input");
-    input.type = "hidden";
-    input.name = key;
-    input.value = fields[key];
-    form.appendChild(input);
-  });
-
-  let iframe = document.getElementById("hidden_iframe");
-  if (!iframe) {
-    iframe = document.createElement("iframe");
-    iframe.name = "hidden_iframe";
-    iframe.id = "hidden_iframe";
-    iframe.style.display = "none";
-    document.body.appendChild(iframe);
-  }
-
-  document.body.appendChild(form);
-  form.submit();
-
-  setTimeout(function() {
-    form.remove();
-  }, 1000);
-}
