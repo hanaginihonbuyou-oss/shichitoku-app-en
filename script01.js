@@ -200,19 +200,17 @@ function showResult() {
 saveEnglishResult(mainType, subType);
 }
 
-function saveEnglishResult(mainType, subType) {
-  fetch("https://script.google.com/macros/s/AKfycbwRWZWojbkbQ1PHSnMWHN3HkFTtVx1r7AycaB_3g0FhlEqnHyAsQYDnrIAdMr1YVEIt_Q/exec", {
-    method: "POST",
-    mode: "no-cors",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      name: window.userName || "",
-      email: window.userEmail || "",
-      primary: mainType,
-      secondary: subType,
-      language: "English"
-    })
-  });
-}
+fetch("https://script.google.com/macros/s/AKfycbxGNQz4bBiBSVuO0VZWeuRMXf4o-xjrvoTEucjlDD6wQSFBG8n7JQT_lRIiCQ6F0WUSUg/exec", {
+  method: "POST",
+  mode: "no-cors",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    name: window.userName || "",
+    email: window.userEmail || "",
+    primary: mainType,
+    secondary: subType,
+    language: "English"
+  })
+});
