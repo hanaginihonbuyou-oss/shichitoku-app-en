@@ -200,7 +200,9 @@ function showResult() {
 saveEnglishResult(mainType, subType);
 }
 
-function saveEnglishResult(mainType, subType) {
+function alert("SHOWRESULT OK");
+saveEnglishResult(mainType, subType);
+}
   alert("saveEnglishResult called");
   console.log("saveEnglishResult called", mainType, subType);
 
