@@ -203,7 +203,7 @@ saveEnglishResult(mainType, subType);
 function saveEnglishResult(mainType, subType) {
   const form = document.createElement("form");
   form.method = "POST";
-  form.action = "https://script.google.com/macros/s/AKfycbyRB7m3G_R5Ez_4ks1lRqOHRWLFCXirDx6lLmdmiazpYyzmGc4N1-C99D0PZ9-_8tCOMg/exec";
+　form.action = "https://script.google.com/macros/s/AKfycbx8YNeR2CxwXks-sSfEQQJOQV_3VJ9Tsi_CTrdQtopMCHPVeoLOCdKaW_amiXZ4xO0Iiw/exec";
   form.target = "hidden_iframe";
   form.style.display = "none";
 
@@ -245,7 +245,7 @@ function saveEnglishResult(mainType, subType) {
 function trackEnHpClickAndOpen(url) {
   const form = document.createElement("form");
   form.method = "POST";
-  form.action = "https://script.google.com/macros/s/AKfycbyRB7m3G_R5Ez_4ks1lRqOHRWLFCXirDx6lLmdmiazpYyzmGc4N1-C99D0PZ9-_8tCOMg/exec";
+  form.action ="https://script.google.com/macros/s/AKfycbx8YNeR2CxwXks-sSfEQQJOQV_3VJ9Tsi_CTrdQtopMCHPVeoLOCdKaW_amiXZ4xO0Iiw/exec";
   form.target = "hidden_iframe";
   form.style.display = "none";
 
